@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style></style>
+</head>
+<body>
+    <h1 id="h1" onmouseenter="add()" onmouseleave="remove()">Hello this is h1 tag</h1>
+    <button onclick="sty()">click</button>
+    <script>
+        h1_tag=document.getElementById("h1");
+        console.log(h1_tag)
+        function add(){
+            h1_tag.style.background = "red";
+            h1_tag.style.border= "2px solid black";
+            h1_tag.style.padding = "50px"
+            h1_tag.style.fontsize = "30px"
+
+        }
+        function remove(){
+            h1_tag.style.background = "green";
+             h1_tag.style.border= "";
+            h1_tag.style.padding = "";
+            h1_tag.style.fontsize = "";
+        }
+        function sty(){
+            h1_tag.style.border = "2px solid red";
+            h1_tag.style.background = "green";
+            h1_tag.style.textAlign = "center";
+            h1_tag.style.fontsize = "30px";
+        }
+    </script>
+</body>
+</html>
